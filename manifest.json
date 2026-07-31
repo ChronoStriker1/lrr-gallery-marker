@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "LRR Gallery Marker",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "Marks source pages and covers already archived in LANraragi.",
   "permissions": [
     "storage"

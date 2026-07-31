@@ -223,6 +223,12 @@ function findLargestVisibleImageTarget(selector) {
 
 function findCoverTarget(link) {
   const media = link.querySelector("img, picture, canvas, video");
+  // Its inline link wraps a block card, so making the link a marker target
+  // changes the card's intrinsic width and stretches the Bulma grid rows.
+  if (media && /(?:^|\.)hentainexus\.com$/i.test(location.hostname)) {
+    const card = link.querySelector(":scope > .card");
+    if (card) return { element: card, score: 100 };
+  }
   if (media) return { element: link, score: 100 };
 
   const wrapper = link.closest("[class*='thumb'], [class*='cover'], [class*='card'], article");
