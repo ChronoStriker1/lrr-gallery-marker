@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LRR Gallery Marker Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="logo">✓</div>
+      <div>
+        <h1>LRR Gallery Marker</h1>
+        <p>Show a green check on source pages and covers already stored in LANraragi.</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>LANraragi connection</h2>
+      <label>
+        Server URL
+        <input id="server" type="url" placeholder="http://192.168.2.4:3000" autocomplete="url">
+      </label>
+      <label>
+        API key
+        <input id="apiKey" type="password" autocomplete="off">
+      </label>
+      <p class="hint">LANraragi must have “Enable CORS for the Client API” enabled.</p>
+      <div class="actions">
+        <button id="test" type="button" class="secondary">Test connection</button>
+        <span id="connectionStatus" role="status"></span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Behavior</h2>
+      <label class="check-row">
+        <input id="enabled" type="checkbox">
+        Enable cover markers
+      </label>
+      <label class="check-row">
+        <input id="matchByTitle" type="checkbox">
+        Fall back to exact title matching when the source URL is missing
+      </label>
+      <label>
+        Simultaneous LANraragi checks
+        <input id="concurrency" type="number" min="1" max="10">
+      </label>
+      <label>
+        Cache results for (minutes)
+        <input id="cacheMinutes" type="number" min="1" max="1440">
+      </label>
+    </section>
+
+    <div class="save-row">
+      <button id="save" type="button">Save settings</button>
+      <span id="saveStatus" role="status"></span>
+    </div>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

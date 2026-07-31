@@ -1,0 +1,37 @@
+.lrr-gallery-marker-target {
+  position: relative !important;
+}
+
+.lrr-gallery-marker-target:is(a) {
+  display: inline-block !important;
+}
+
+#gd1.lrr-gallery-marker-target {
+  overflow: visible !important;
+}
+
+#gd1 > .lrr-gallery-marker {
+  right: 6px;
+  top: 6px;
+}
+
+.lrr-gallery-marker {
+  align-items: center;
+  background: #18a34a;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 7px rgb(0 0 0 / 55%);
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  font: 900 21px/1 Arial, sans-serif;
+  height: 32px;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  right: 6px;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 25%);
+  top: 6px;
+  width: 32px;
+  z-index: 2147483647;
+}

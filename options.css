@@ -1,0 +1,115 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #111827;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+main {
+  margin: 48px auto;
+  max-width: 680px;
+  padding: 0 24px;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.logo {
+  align-items: center;
+  background: #18a34a;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgb(24 163 74 / 30%);
+  color: white;
+  display: flex;
+  flex: 0 0 auto;
+  font-size: 40px;
+  font-weight: 900;
+  height: 72px;
+  justify-content: center;
+  width: 72px;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+header p, .hint {
+  color: #9ca3af;
+}
+
+section {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  padding: 22px;
+}
+
+label {
+  display: block;
+  font-weight: 650;
+  margin: 16px 0;
+}
+
+input[type="url"],
+input[type="password"],
+input[type="number"] {
+  background: #111827;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #f9fafb;
+  display: block;
+  font: inherit;
+  margin-top: 7px;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.check-row {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.actions, .save-row {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+button {
+  background: #18a34a;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 750;
+  padding: 10px 16px;
+}
+
+button.secondary {
+  background: #374151;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+#connectionStatus, #saveStatus {
+  color: #a7f3d0;
+}
+
+.error {
+  color: #fca5a5 !important;
+}
