@@ -27,6 +27,14 @@ covers when the item already exists in LANraragi.
 
 ## Install from source
 
+Download and extract this repository, or clone it:
+
+```sh
+git clone https://github.com/ChronoStriker1/lrr-gallery-marker.git
+```
+
+There is no build step. Load the directory containing `manifest.json`.
+
 ### Chrome, Edge, Brave, or other Chromium browsers
 
 1. Open the browser's extensions page.
@@ -61,6 +69,13 @@ covers when the item already exists in LANraragi.
   removed from sync storage.
 - No analytics, advertising, remote code, downloads, archive writes, or archive
   deletion are included.
+
+## Troubleshooting
+
+- If connection testing fails, check the server URL, API key, and LANraragi's Client API CORS setting. Use an address reachable from the browser's computer.
+- If a known archive has no check mark, compare its `source:` tag with the page URL and confirm the Source Finder plugin is available. Exact-title fallback can only match titles already stored in LANraragi.
+- After changing settings or updating extension files, reload the extension and the gallery tab. Cached lookups expire according to the cache duration in settings.
+- A Firefox temporary installation is removed when Firefox closes; load it again for the next development session.
 
 ## Credits
 
